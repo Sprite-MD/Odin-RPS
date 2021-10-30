@@ -23,10 +23,17 @@ function playRound(player, computer){
     }
 }
 
-function game(){
-    for (i = 0; i < 5; i++){
-        let computer = computerPlay();
-        let player = window.prompt("Rock, paper, or scissor?");
-        playRound(player, computer);
-    }
-}
+const rock = document.querySelector('#rock');
+const paper = document.querySelector('#paper');
+const scissor = document.querySelector('#scissor');
+
+rock.addEventListener('click', () => {
+    playRound('rock', computerPlay());
+});
+paper.addEventListener('click', () => {
+    playRound('paper', computerPlay());
+});
+scissor.addEventListener('click', () => {
+    playRound('scissor', computerPlay());
+});
+
