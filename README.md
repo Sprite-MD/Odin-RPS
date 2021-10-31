@@ -6,7 +6,7 @@ https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/roc
 https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/dom-manipulation
 
 First iteration just used basic functions and loops to create the game and output result in the console.  
-Second iteration added a GUI and used Document Object Model (DOM) manipulation to have the player click on the choice instead of typing it into the console.
+Second iteration added a GUI and used Document Object Model (DOM) manipulation to have the player click on the choice instead of typing it into the console.  
 Also added a scoreboard and shows the result on the web page itself so players don't need to play in the console.
 
 What I learned:  
