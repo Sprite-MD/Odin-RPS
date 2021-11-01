@@ -1,18 +1,13 @@
 function computerPlay(){
     let comp = Math.floor(Math.random() * 3);
-    if (comp == 0){
-        return "rock";
-    } else if (comp == 1){
-        return "paper";
-    }else{
-        return "scissor";
-    }
+    const choice = ['rock','paper', 'scissor'];
+    return choice[comp];
 }
 
-function playRound(player, computer){
-    let playerScore = 0;
-    let compScore = 0;
-    
+let playerScore = 0;
+let compScore = 0;
+
+function playRound(player, computer){    
     if (player == computer){
         console.log("It's a tie!");
     } else if (player == "rock" && computer == "paper" || 
@@ -28,7 +23,11 @@ function playRound(player, computer){
     }
 }
 
-const scoreDiv = document.querySelector('.score');
+const container = document.querySelector('.container');
+const div = document.createElement('div');
+div.setAttribute('id', 'score');
+div.textContent = `Score: ${playerScore}`;
+container.appendChild(div);
 
 
 
