@@ -29,7 +29,7 @@ function playRound(player, computer){
 }
 
 const scoreDiv = document.querySelector('.score');
-const 
+
 
 
 
