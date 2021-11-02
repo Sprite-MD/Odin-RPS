@@ -13,7 +13,7 @@ What I learned:
 JavaScript syntax through usage of functions and loops  
 DOM manipulation -- adding in HTML tags, changing CSS styles, and applying events to buttons  
 
-Possible To-dos:
+Possible To-dos:  
 Replace buttons with images instead  
 Mobile friendly  
 Animations for choice
