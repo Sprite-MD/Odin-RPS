@@ -27,7 +27,7 @@ function playRound(player, computer){
         console.log("You Win!");
         playerScore++;
     }
-    div.textContent = `Score: ${playerScore}`;
+    div.textContent = `Your Score: ${playerScore}  Computer Score: ${compScore}`;
 }
 
 
@@ -49,7 +49,7 @@ scissor.addEventListener('click', () => {
 reset.addEventListener('click', () => {
     playerScore = 0;
     compScore = 0;
-    div.textContent = `Score: ${playerScore}`;
+    div.textContent = `Your Score: ${playerScore}  Computer Score: ${compScore}`;
 });
 
 
