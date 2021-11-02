@@ -13,3 +13,10 @@
 .reset{
     text-align: center;
 }
+
+#playerScore{
+    text-align: center;
+}
+#compScore{
+    text-align: center;
+}
