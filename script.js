@@ -7,6 +7,13 @@ function computerPlay(){
 let playerScore = 0;
 let compScore = 0;
 
+const container = document.querySelector('.container');
+const div = document.createElement('div');
+div.setAttribute('id', 'score');
+container.appendChild(div);
+
+
+
 function playRound(player, computer){    
     if (player == computer){
         console.log("It's a tie!");
@@ -21,13 +28,10 @@ function playRound(player, computer){
         console.log("You Win!");
         playerScore++;
     }
+    div.textContent = `Score: ${playerScore}`;
 }
 
-const container = document.querySelector('.container');
-const div = document.createElement('div');
-div.setAttribute('id', 'score');
-div.textContent = `Score: ${playerScore}`;
-container.appendChild(div);
+
 
 
 
@@ -53,4 +57,5 @@ scissor.addEventListener('click', () => {
 reset.addEventListener('click', () => {
     playerScore = 0;
     compScore = 0;
+    div.textContent = `Score: ${playerScore}`;
 });
