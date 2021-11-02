@@ -4,6 +4,7 @@ function computerPlay(){
     return choice[comp];
 }
 
+// Creates Divs for player and comp. scores and places them in container
 let playerScore = 0;
 let compScore = 0;
 
@@ -15,6 +16,12 @@ container.appendChild(playerDiv);
 const compDiv = document.createElement('div');
 compDiv.setAttribute('id','compScore');
 container.appendChild(compDiv)
+
+// Inserts the Scores before the btn on DOM
+let referenceNode = document.querySelector('.playerSelect');
+container.insertBefore(playerDiv, referenceNode);
+container.insertBefore(compDiv, referenceNode);
+
 
 function playRound(player, computer){    
     if (player == computer){
