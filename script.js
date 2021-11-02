@@ -13,11 +13,10 @@ div.setAttribute('id', 'score');
 container.appendChild(div);
 
 
-
 function playRound(player, computer){    
     if (player == computer){
         console.log("It's a tie!");
-    } else if (player == "rock" && computer == "paper" || 
+    } else if (player == "rock" && computer == "paper" ||
                player == "paper" && computer == "scissor" ||
                player == "scissor" && computer == "rock"
     ){
@@ -30,13 +29,6 @@ function playRound(player, computer){
     }
     div.textContent = `Score: ${playerScore}`;
 }
-
-
-
-
-
-
-
 
 
 // Button events
@@ -59,3 +51,5 @@ reset.addEventListener('click', () => {
     compScore = 0;
     div.textContent = `Score: ${playerScore}`;
 });
+
+
