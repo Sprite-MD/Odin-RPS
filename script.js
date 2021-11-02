@@ -8,10 +8,13 @@ let playerScore = 0;
 let compScore = 0;
 
 const container = document.querySelector('.container');
-const div = document.createElement('div');
-div.setAttribute('id', 'score');
-container.appendChild(div);
+const playerDiv = document.createElement('div');
+playerDiv.setAttribute('id', 'playerScore');
+container.appendChild(playerDiv);
 
+const compDiv = document.createElement('div');
+compDiv.setAttribute('id','compScore');
+container.appendChild(compDiv)
 
 function playRound(player, computer){    
     if (player == computer){
@@ -27,7 +30,8 @@ function playRound(player, computer){
         console.log("You Win!");
         playerScore++;
     }
-    div.textContent = `Your Score: ${playerScore}  Computer Score: ${compScore}`;
+    playerDiv.textContent = `Player: ${playerScore}`;
+    compDiv.textContent = `Computer: ${compScore}`;
 }
 
 
@@ -49,7 +53,8 @@ scissor.addEventListener('click', () => {
 reset.addEventListener('click', () => {
     playerScore = 0;
     compScore = 0;
-    div.textContent = `Your Score: ${playerScore}  Computer Score: ${compScore}`;
+    playerDiv.textContent = `Player: ${playerScore}`;
+    compDiv.textContent = `Computer: ${compScore}`;
 });
 
 
